@@ -25,16 +25,19 @@ var app =  function() {
 
 	userSelect.addEventListener('change', () => {
 		let userName = event.target.value;
-
-		fetch(`https://api.github.com/users/${userName}`)
-			.then(function(response){
+		if(userName !== 'Selecciona una usuaria') {
+			fetch(`https://api.github.com/users/${userName}`)
+				.then(function(response){
 					return response.json();
 				})
 				.then(function(json){
 					adalaberInfo = json;
 
-		renderUserInfo(adalaberInfo);
-		})
+				renderUserInfo(adalaberInfo);
+			})
+		} else {
+			location.reload();
+		}
 	});
 
 	function renderUserInfo(adalaberInfo) {
@@ -68,7 +71,7 @@ var app =  function() {
 					<p class="social-paragraph">Following</p>
 				</div>
 			</div>`;
-		memberSince.innerHTML = `Miembro desde ${adalaberInfo.created_at}`;
+		memberSince.innerHTML = `Miembro desde ${new Date(adalaberInfo.created_at).getFullYear()}`;
 	}
 }
 

@@ -1,16 +1,20 @@
 #user-select {
-	width: 250px;
+	width: 260px;
 	height: 35px;
-	background: url("../images/down-arrow.svg") no-repeat right;
+	appearance: none;
+	-webkit-appearance: none;
+	background: url("../images/down-arrow.svg") no-repeat;
+	background-position: 95% 50%;
 	background-size: 13px;
 	background-color: white;
 	padding-left: 15px;
 	font-size: .9em;
 	color: #b8b8b8;
-	margin-top: 10vh;
+	margin-top: 3vh;
 	outline-style: none;
 	border-style: none;
-	box-shadow: 0 0 10px #b8b8b8;
+	-webkit-box-shadow: 0 0 3px 1px #b8b8b8;;
+	box-shadow: 0 0 3px 1px #b8b8b8;
 }
 
 .option-user {

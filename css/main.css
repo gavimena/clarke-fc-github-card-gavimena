@@ -1,17 +1,21 @@
 #user-select {
-  width: 250px;
+  width: 260px;
   height: 35px;
-  background: url("../images/down-arrow.svg") no-repeat right;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/down-arrow.svg") no-repeat;
+  background-position: 95% 50%;
   background-size: 13px;
   background-color: white;
   padding-left: 15px;
   font-size: .9em;
   color: #b8b8b8;
-  margin-top: 10vh;
+  margin-top: 3vh;
   outline-style: none;
   border-style: none;
-  -webkit-box-shadow: 0 0 10px #b8b8b8;
-  box-shadow: 0 0 10px #b8b8b8;
+  -webkit-box-shadow: 0 0 3px 1px #b8b8b8;
+  box-shadow: 0 0 3px 1px #b8b8b8;
 }
 
 .option-user {
@@ -19,11 +23,12 @@
 }
 
 .user-container {
-  width: 90%;
+  width: 300px;
   margin-top: 15px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 10px #b8b8b8;
-  box-shadow: 0 0 10px #b8b8b8;
+  border: 1px solid #b8b8b8;
+  -webkit-box-shadow: 0 0 10px 1px #7b7f7f;
+  box-shadow: 0 0 10px 1px #7b7f7f;
   background-color: white;
 }
 
@@ -95,6 +100,12 @@
   font-weight: 100;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -105,9 +116,9 @@
 
 body {
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#b8b8b8));
-  background: linear-gradient(#e0e0e0, #b8b8b8);
-  background: url();
+  height: 100vh;
+  background: url(../images/github-logo.svg) no-repeat center center, -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#b8b8b8));
+  background: url(../images/github-logo.svg) no-repeat center center, linear-gradient(#e0e0e0, #b8b8b8);
 }
 
 main {
@@ -123,8 +134,19 @@ main {
   align-items: center;
 }
 
+.member-since {
+  width: 300px;
+  color: #54585a;
+  font-size: .9em;
+  margin-top: 10px;
+  text-align: right;
+}
+
 .adalab-logo {
-  width: 100px;
+  width: 90px;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

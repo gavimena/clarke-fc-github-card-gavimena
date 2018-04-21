@@ -7,8 +7,8 @@
 
 body {
 	width: 100vw;
-	background: linear-gradient(#e0e0e0, #b8b8b8);
-	background: url()
+	height: 100vh;
+	background: url(../images/github-logo.svg) no-repeat center center, linear-gradient(#e0e0e0, #b8b8b8);
 }
 
 main {
@@ -17,7 +17,17 @@ main {
 	align-items: center;
 }
 
+.member-since {
+	width: 300px;
+	color: #54585a;
+	font-size: .9em;
+	margin-top: 10px;
+	text-align: right;
+}
 
 .adalab-logo {
-	width: 100px;
+	width: 90px;
+	bottom: 0;
+	margin-right: 30px;
+	margin-bottom: 10px;
 }
