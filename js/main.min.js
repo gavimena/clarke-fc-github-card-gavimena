@@ -38,26 +38,34 @@ var app =  function() {
 	});
 
 	function renderUserInfo(adalaberInfo) {
-		console.log('dentro render', adalaberInfo);
+
+		if(adalaberInfo.location === null || adalaberInfo.name === null || adalaberInfo.location === null){
+			adalaberInfo.location = '';
+			adalaberInfo.name = '';
+		}
+
 		userContainer.innerHTML = `
-			<img src=https://avatars1.githubusercontent.com/u/${adalaberInfo.id} alt="adalaber avatar">
-			<div>
-				<p>@${adalaberInfo.login}</p>
-				<h2>${adalaberInfo.name}</h2>
-				<p>${adalaberInfo.location}</p>
+			<img class="adalaber-avatar" src=https://avatars1.githubusercontent.com/u/${adalaberInfo.id} alt="adalaber avatar">
+			<div class="adalaber-info">
+				<p class="adalaber-username">@${adalaberInfo.login}</p>
+				<h2 class="adalaber-name">${adalaberInfo.name}</h2>
+				<div class="location-container">
+					<img class="location" src="../images/location.svg" alt="location">
+					<p class="adalaber-location">${adalaberInfo.location}</p>
+				</div>
 			</div>
-			<div>
+			<div class="social-container">
 				<div>
-					<h2>${adalaberInfo.public_repos}</h2>
-					<p>Repos</p>
+					<h2 class="social-title">${adalaberInfo.public_repos}</h2>
+					<p class="social-paragraph">Repos</p>
 				</div>
 				<div>
-					<h2>${adalaberInfo.followers}</h2>
-					<p>Followers</p>
+					<h2 class="social-title">${adalaberInfo.followers}</h2>
+					<p class="social-paragraph">Followers</p>
 				</div>
 				<div>
-					<h2>${adalaberInfo.following}</h2>
-					<p>Following</p>
+					<h2 class="social-title">${adalaberInfo.following}</h2>
+					<p class="social-paragraph">Following</p>
 				</div>
 			</div>`;
 		memberSince.innerHTML = `Miembro desde ${adalaberInfo.created_at}`;

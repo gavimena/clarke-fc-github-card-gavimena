@@ -1,0 +1,18 @@
+#user-select {
+	width: 250px;
+	height: 35px;
+	background: url("../images/down-arrow.svg") no-repeat right;
+	background-size: 13px;
+	background-color: white;
+	padding-left: 15px;
+	font-size: .9em;
+	color: #b8b8b8;
+	margin-top: 10vh;
+	outline-style: none;
+	border-style: none;
+	box-shadow: 0 0 10px #b8b8b8;
+}
+
+.option-user {
+	background-color: white;
+}

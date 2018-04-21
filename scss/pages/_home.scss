@@ -2,14 +2,22 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
 	width: 100vw;
-	height: 100vh;
-	background-color: lightgrey;
+	background: linear-gradient(#e0e0e0, #b8b8b8);
+	background: url()
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+}
+
+
+.adalab-logo {
+	width: 100px;
 }

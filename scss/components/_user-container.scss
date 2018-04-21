@@ -1,0 +1,64 @@
+.user-container {
+	width: 90%;
+	margin-top: 15px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 10px #b8b8b8;
+	box-shadow: 0 0 10px #b8b8b8;
+	background-color: white;
+}
+
+.adalaber-avatar {
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.adalaber-info {
+	background-color: white;
+	padding-left: 30px;
+	margin-bottom: 15px;
+}
+
+.adalaber-username {
+	margin-top: 5px;
+	color: #b8b8b8;
+}
+
+.adalaber-name {
+	margin-top: 5px;
+	color: #099d8d;
+}
+
+.location-container {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.adalaber-location {
+	margin-left: 5px;
+	color: #5a5e60;
+	font-size: .9em;
+}
+
+.location {
+	width: 20px;
+}
+
+.social-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100px;
+	background: linear-gradient(#0a9e8e, #14d8c3);
+	color: white;
+	text-align: center;
+}
+
+.social-title {
+	font-size: 2.5em;
+}
+
+.social-paragraph {
+	font-size: .9em;
+	font-weight: 100;
+}
