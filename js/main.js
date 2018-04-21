@@ -42,10 +42,16 @@ var app =  function() {
 
 	function renderUserInfo(adalaberInfo) {
 
-		if(adalaberInfo.location === null || adalaberInfo.name === null || adalaberInfo.location === null){
+		let imgLocation = '<img class="location" src="images/location.svg" alt="location">';
+
+		if(adalaberInfo.location === null) {
 			adalaberInfo.location = '';
+			imgLocation = '';
+		}
+		if(adalaberInfo.name === null) {
 			adalaberInfo.name = '';
 		}
+
 
 		userContainer.innerHTML = `
 			<img class="adalaber-avatar" src=https://avatars1.githubusercontent.com/u/${adalaberInfo.id} alt="adalaber avatar">
@@ -53,7 +59,7 @@ var app =  function() {
 				<p class="adalaber-username">@${adalaberInfo.login}</p>
 				<h2 class="adalaber-name">${adalaberInfo.name}</h2>
 				<div class="location-container">
-					<img class="location" src="images/location.svg" alt="location">
+					${imgLocation}
 					<p class="adalaber-location">${adalaberInfo.location}</p>
 				</div>
 			</div>
