@@ -53,7 +53,7 @@ var app =  function() {
 				<p class="adalaber-username">@${adalaberInfo.login}</p>
 				<h2 class="adalaber-name">${adalaberInfo.name}</h2>
 				<div class="location-container">
-					<img class="location" src="../images/location.svg" alt="location">
+					<img class="location" src="images/location.svg" alt="location">
 					<p class="adalaber-location">${adalaberInfo.location}</p>
 				</div>
 			</div>
