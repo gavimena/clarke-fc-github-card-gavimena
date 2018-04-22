@@ -15,6 +15,10 @@
 	border-style: none;
 	-webkit-box-shadow: 0 0 3px 1px #b8b8b8;;
 	box-shadow: 0 0 3px 1px #b8b8b8;
+	
+	@media all and (min-width: 430px) {
+		margin-top: 5vh;
+	}
 }
 
 .option-user {
