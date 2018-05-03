@@ -9,12 +9,15 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: url(../images/github-logo.svg) no-repeat center center, linear-gradient(#e0e0e0, #b8b8b8);
+	display: flex;
+	flex-direction: column;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex: 1;
 }
 
 .member-since {
